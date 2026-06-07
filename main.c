@@ -1,22 +1,20 @@
-#include "stm8s.h"
-#include "dio.h"
+#include <string.h>
+#include <stdio.h>
+
+#include "stm8s_conf.h"
 
 void main(void)
 {
-    CLK_HSIPrescalerConfig(CLK_PRESCALER_HSIDIV1);
+	uint8_t status;
 
-    DIO_Init();
+    /* GPIO */
 
-    while(1)
-    {
-        /* Mirror Inputs to Relays */
+    GPIO_Init(GPIOC, GPIO_PIN_3, GPIO_MODE_OUT_PP_LOW_FAST);
 
-        Relay1_Set(Input1_Read());
-        Relay2_Set(Input2_Read());
-        Relay3_Set(Input3_Read());
-        Relay4_Set(Input4_Read());
+    GPIO_Init(GPIOD, GPIO_PIN_2, GPIO_MODE_IN_PU_NO_IT);
+    GPIO_Init(GPIOD, GPIO_PIN_3, GPIO_MODE_IN_PU_NO_IT);
+    GPIO_Init(GPIOD, GPIO_PIN_4, GPIO_MODE_IN_PU_NO_IT);
+    GPIO_Init(GPIOD, GPIO_PIN_7, GPIO_MODE_IN_PU_NO_IT);
 
-        Relay5_Set(1);
-        Relay6_Set(0);
-    }
+    
 }

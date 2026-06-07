@@ -289,6 +289,11 @@ String.6.0=2026,6,5,23,2,19
 [Root.Source Files...\stm_workspace\library\src\dio.c]
 ElemType=File
 PathName=..\stm_workspace\library\src\dio.c
+Next=Root.Source Files...\stm_workspace\library\src\stm8_uart.c
+
+[Root.Source Files...\stm_workspace\library\src\stm8_uart.c]
+ElemType=File
+PathName=..\stm_workspace\library\src\stm8_uart.c
 Next=Root.Source Files...\stm_workspace\library\src\stm8s_clk.c
 
 [Root.Source Files...\stm_workspace\library\src\stm8s_clk.c]
@@ -309,6 +314,11 @@ Next=Root.Source Files...\stm_workspace\library\src\stm8s_spi.c
 [Root.Source Files...\stm_workspace\library\src\stm8s_spi.c]
 ElemType=File
 PathName=..\stm_workspace\library\src\stm8s_spi.c
+Next=Root.Source Files...\stm_workspace\library\src\stm8s_uart1.c
+
+[Root.Source Files...\stm_workspace\library\src\stm8s_uart1.c]
+ElemType=File
+PathName=..\stm_workspace\library\src\stm8s_uart1.c
 Next=Root.Source Files.main.c
 
 [Root.Source Files.main.c]
@@ -396,6 +406,11 @@ String.6.0=2026,6,5,23,2,19
 [Root.Include Files...\stm_workspace\library\inc\dio.h]
 ElemType=File
 PathName=..\stm_workspace\library\inc\dio.h
+Next=Root.Include Files...\stm_workspace\library\inc\stm8_uart.h
+
+[Root.Include Files...\stm_workspace\library\inc\stm8_uart.h]
+ElemType=File
+PathName=..\stm_workspace\library\inc\stm8_uart.h
 Next=Root.Include Files...\stm_workspace\library\inc\stm8s.h
 
 [Root.Include Files...\stm_workspace\library\inc\stm8s.h]
@@ -426,3 +441,8 @@ Next=Root.Include Files...\stm_workspace\library\inc\stm8s_spi.h
 [Root.Include Files...\stm_workspace\library\inc\stm8s_spi.h]
 ElemType=File
 PathName=..\stm_workspace\library\inc\stm8s_spi.h
+Next=Root.Include Files...\stm_workspace\library\inc\stm8s_uart1.h
+
+[Root.Include Files...\stm_workspace\library\inc\stm8s_uart1.h]
+ElemType=File
+PathName=..\stm_workspace\library\inc\stm8s_uart1.h
